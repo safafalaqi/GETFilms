@@ -7,6 +7,17 @@
 
 import Foundation
 
+class FilmsModel{
+    
+    static func getAllFilms(completionHandler:@escaping  (_ data: Data? , _ response:URLResponse?, _ error:Error?) -> Void){
+        let url = URL(string: "https://swapi.dev/api/films/?format=json")
+        let session = URLSession.shared
+        let task = session.dataTask(with: url!, completionHandler:completionHandler)
+        task.resume()
+    }
+    
+}
+
 // MARK: - Welcome
 struct Films: Codable {
     let count: Int

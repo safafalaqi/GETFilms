@@ -10,8 +10,7 @@ import UIKit
 class FilmsTableViewController: UITableViewController {
 
     var filmsList: [FilmsResult]? = []
-    var url = URL(string: "https://swapi.dev/api/films/?format=json")
-  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,11 +22,8 @@ class FilmsTableViewController: UITableViewController {
     
     func loadData(){
   
-    
-        // create a URLSession to handle the request tasks
-               let session = URLSession.shared
         // create a "data task" to make the request and run completion handler
-                let task = session.dataTask(with: url!, completionHandler: {
+        FilmsModel.getAllFilms( completionHandler: {
                     // see: Swift closure expression syntax
                     data, response, error in
                     // data -> JSON data, response -> headers and other meta-information, error-> if one occurred
@@ -50,11 +46,6 @@ class FilmsTableViewController: UITableViewController {
                         print(error)
                     }
                 })
-        
-        // execute the task and wait for the response before
-               // running the completion handler. This is async!
-               task.resume()
-            
         
     }
 
