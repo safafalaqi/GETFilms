@@ -43,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		854E10D8277312BF008DF74F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85C39AC627714253008FC2E5 /* FilmsTableViewController.swift */,
+				85C39AC427714242008FC2E5 /* PeopleTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		854E10D92773131C008DF74F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85C39ACC277144C0008FC2E5 /* FilmsModel.swift */,
+				85C39AC82771428C008FC2E5 /* PeopleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		85C39AA4277141DD008FC2E5 = {
 			isa = PBXGroup;
 			children = (
@@ -68,10 +86,8 @@
 				85C39AB9277141E2008FC2E5 /* Assets.xcassets */,
 				85C39ABB277141E2008FC2E5 /* LaunchScreen.storyboard */,
 				85C39ABE277141E2008FC2E5 /* Info.plist */,
-				85C39AC427714242008FC2E5 /* PeopleTableViewController.swift */,
-				85C39AC627714253008FC2E5 /* FilmsTableViewController.swift */,
-				85C39AC82771428C008FC2E5 /* PeopleModel.swift */,
-				85C39ACC277144C0008FC2E5 /* FilmsModel.swift */,
+				854E10D8277312BF008DF74F /* Controller */,
+				854E10D92773131C008DF74F /* Model */,
 			);
 			path = "GET Films";
 			sourceTree = "<group>";

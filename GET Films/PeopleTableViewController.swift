@@ -1,7 +1,7 @@
 //
 //  PeopleTableViewController.swift
 //  GET Films
-//
+//  MVC in iOS
 //  Created by Safa Falaqi on 21/12/2021.
 //
 
