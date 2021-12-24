@@ -49,13 +49,21 @@ class PeopleTableViewController: UITableViewController {
                       })
               }
           }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let person = sender as? Result
+        let destnation = segue.destination as? PeopleDetailsViewController
+        destnation?.person = person
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let person = peopleList?[indexPath.row]
+        performSegue(withIdentifier: "showPeopleDetails", sender: person)
+    }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "peopleCell",for : indexPath)
         cell.textLabel?.text = peopleList?[indexPath.row].name ?? "No data"
-        
+        cell.textLabel?.textColor = UIColor.systemYellow
         return cell
         
     }

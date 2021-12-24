@@ -54,7 +54,7 @@ class FilmsTableViewController: UITableViewController {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "filmsCell",for : indexPath)
         cell.textLabel?.text = filmsList?[indexPath.row].title ?? "No data"
-        
+        cell.textLabel?.textColor = UIColor.systemYellow
         return cell
         
     }
@@ -62,5 +62,17 @@ class FilmsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filmsList?.count ?? 0
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let film = sender as? FilmsResult
+        let destnation = segue.destination as? FilmsDetailsViewController
+        destnation?.film = film
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let film = filmsList?[indexPath.row]
+        self.performSegue(withIdentifier: "showFilmsDetails", sender: film)
+    }
+    
+    
 }
 

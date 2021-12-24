@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		856D72962773DCF5009C0570 /* PeopleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856D72952773DCF5009C0570 /* PeopleDetailsViewController.swift */; };
+		856D72982773DD1B009C0570 /* FilmsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856D72972773DD1B009C0570 /* FilmsDetailsViewController.swift */; };
+		85781B392775456300B50F58 /* star_jedi in Resources */ = {isa = PBXBuildFile; fileRef = 85781B382775456300B50F58 /* star_jedi */; };
+		85781B3B2775481E00B50F58 /* SpeciesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85781B3A2775481E00B50F58 /* SpeciesModel.swift */; };
 		85C39AB1277141DD008FC2E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C39AB0277141DD008FC2E5 /* AppDelegate.swift */; };
 		85C39AB3277141DD008FC2E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C39AB2277141DD008FC2E5 /* SceneDelegate.swift */; };
 		85C39AB8277141DD008FC2E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C39AB6277141DD008FC2E5 /* Main.storyboard */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		856D72952773DCF5009C0570 /* PeopleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailsViewController.swift; sourceTree = "<group>"; };
+		856D72972773DD1B009C0570 /* FilmsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsDetailsViewController.swift; sourceTree = "<group>"; };
+		85781B382775456300B50F58 /* star_jedi */ = {isa = PBXFileReference; lastKnownFileType = folder; path = star_jedi; sourceTree = "<group>"; };
+		85781B3A2775481E00B50F58 /* SpeciesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesModel.swift; sourceTree = "<group>"; };
 		85C39AAD277141DD008FC2E5 /* GET Films.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GET Films.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C39AB0277141DD008FC2E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85C39AB2277141DD008FC2E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +56,8 @@
 			children = (
 				85C39AC627714253008FC2E5 /* FilmsTableViewController.swift */,
 				85C39AC427714242008FC2E5 /* PeopleTableViewController.swift */,
+				856D72952773DCF5009C0570 /* PeopleDetailsViewController.swift */,
+				856D72972773DD1B009C0570 /* FilmsDetailsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -57,6 +67,7 @@
 			children = (
 				85C39ACC277144C0008FC2E5 /* FilmsModel.swift */,
 				85C39AC82771428C008FC2E5 /* PeopleModel.swift */,
+				85781B3A2775481E00B50F58 /* SpeciesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -80,6 +91,7 @@
 		85C39AAF277141DD008FC2E5 /* GET Films */ = {
 			isa = PBXGroup;
 			children = (
+				85781B382775456300B50F58 /* star_jedi */,
 				85C39AB0277141DD008FC2E5 /* AppDelegate.swift */,
 				85C39AB2277141DD008FC2E5 /* SceneDelegate.swift */,
 				85C39AB6277141DD008FC2E5 /* Main.storyboard */,
@@ -152,6 +164,7 @@
 			files = (
 				85C39ABD277141E2008FC2E5 /* LaunchScreen.storyboard in Resources */,
 				85C39ABA277141E2008FC2E5 /* Assets.xcassets in Resources */,
+				85781B392775456300B50F58 /* star_jedi in Resources */,
 				85C39AB8277141DD008FC2E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,10 +177,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				85C39AC92771428C008FC2E5 /* PeopleModel.swift in Sources */,
+				85781B3B2775481E00B50F58 /* SpeciesModel.swift in Sources */,
 				85C39AB1277141DD008FC2E5 /* AppDelegate.swift in Sources */,
 				85C39AC527714242008FC2E5 /* PeopleTableViewController.swift in Sources */,
 				85C39ACD277144C0008FC2E5 /* FilmsModel.swift in Sources */,
+				856D72962773DCF5009C0570 /* PeopleDetailsViewController.swift in Sources */,
 				85C39AB3277141DD008FC2E5 /* SceneDelegate.swift in Sources */,
+				856D72982773DD1B009C0570 /* FilmsDetailsViewController.swift in Sources */,
 				85C39AC727714253008FC2E5 /* FilmsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
